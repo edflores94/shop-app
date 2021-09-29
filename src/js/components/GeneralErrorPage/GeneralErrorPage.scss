@@ -1,0 +1,51 @@
+@import "scss/module-base.scss";
+
+.wrapper {
+  background: $gray-13;
+  position: relative;
+  overflow-y: auto;
+  height: 98vh;
+  align-content: center !important;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 12%;
+  width: 94%;
+
+  @include sm {
+    margin-top: 10%;
+    width: 90%;
+  }
+
+  @include md {
+    width: 80%;
+  }
+
+  @include lg {
+    width: 74%;
+    margin-top: 8%;
+  }
+}
+
+.title {
+  color: $black-3;
+  font-family: "RealHeadPro-Light";
+  font-size: rem(31);
+  font-weight: 800;
+  letter-spacing: rem(-0.41);
+  line-height: rem(38);
+  margin-top: rem(20);
+
+  @include sm {
+    font-size: rem(42);
+    font-weight: 900;
+    letter-spacing: rem(-1.11);
+    line-height: rem(50);
+  }
+}

@@ -1,0 +1,27 @@
+.menuDiv {
+  display: flex;
+  flex-direction: row;
+  //border: 1px solid blue;
+  width: 100%;
+}
+
+.logoSection {
+  display: flex;
+  justify-content: flex-start;
+  //border: 1px solid yellowgreen;
+  width: 10%;
+}
+
+.itemsSection {
+  display: flex;
+  justify-content: flex-start;
+  //border: 1px solid red;
+  width: 70%;
+}
+
+.signInSection {
+  display: flex;
+  justify-content: flex-end;
+  //border: 1px solid blue;
+  width: 20%;
+}

@@ -1,0 +1,52 @@
+$padding-xs: 20px;
+$padding-sm: 46px;
+$padding-md: 68px;
+$padding-lg: 80px;
+
+$focusOutlineColor: #81bcfa;
+
+html {
+  &.hasTabbed {
+    button {
+      &:focus {
+        outline: auto 5px $focusOutlineColor;
+      }
+    }
+  }
+}
+
+html,
+body {
+  &.noScrollable {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+}
+
+%side-padding,
+.side-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include sm() {
+    padding-left: $padding-sm;
+    padding-right: $padding-sm;
+  }
+
+  @include md() {
+    padding-left: $padding-md;
+    padding-right: $padding-md;
+  }
+
+  @include lg() {
+    padding-left: $padding-lg;
+    padding-right: $padding-lg;
+  }
+
+  @include xxl() {
+    $xxl-padding: calc(50vw - 750px);
+    padding-left: $xxl-padding;
+    padding-right: $xxl-padding;
+  }
+}
